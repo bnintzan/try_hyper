@@ -48,6 +48,8 @@ def main(args):
     index = []
     my_index = []
     volume = np.zeros([len(subjs_dirs), len(wmh_abb)])
+    print(wmh_abb)
+    print(len(wmh_abb))
     for i in range(0, len(subjs_dirs)):
         my_index.append(i)
         if glob.glob(os.path.join(input_dir, subjs_dirs[i], '*%s' % mask_name)):
